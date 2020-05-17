@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lattitude Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="style.css">           
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!-- 
+            Custom nvbar color 
+        -->
+        <nav class="navbar navbar-expand navbar-dark flex-md-row bd-navbar navbar-custom">
+            <a class="navbar-brand" href="home.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
+                <i class="fa fa-bars fa-lg py-1 text-white"></i>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCustom">
+                <ul class="navbar-nav ml-auto">                    
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">                     
+                          <a class="dropdown-item" href="temperatures.html">Temperatures</a>
+                          <a class="dropdown-item" href="humidity.html">Humidity</a>
+                          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                          <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                      </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+
+        <div class="container">
+          <div class="row">
+              <div class = "col-lg-8 col-s-6">
+                  <div class="jumbotron jumbotron-fluid">
+                      <div class="container">
+                        <h1 class="display-4">Cloudiness</h1>
+                        <hr>
+                        <div class="pull-centre">
+                          <img src="./Resources/fig3.png" alt="Cloudiness" width="400 " height="300" ALIGN  ="centre"
+                          class="rounded mx-auto d-block" >        
+                          <br>                    
+                            
+                              <blockquote cite ="NASA">Clouds vary with distance from the equator. The cloudiest regions are the tropics and the temperate 
+                              zones; the subtropics and the polar regions have between 10 and 20 percent less cover. Tropical cloud 
+                              tops are substantially higher, extending between one and two kilometers higher than cloud tops in the
+                               midlatitudes and more than two kilometers higher than the clouds over the subtropics and the poles.</blockquote>
+                               <p>The above premise it is shown in the plot, there is a less concentration of cloudiness at the extremes (-60,80).                              
+                              However, one of the most notoriuos facts is that it seems that basen solely in the latitud as a determinant 
+                              in the cloudiness it it seems that the don't have a close correlation. </p>                        
+                              <p>It may be conclude, that the clouds in the globe can vary with location, with time of day, with changing
+                               weather and with season.
+                            </p>                            
+                        </div>
+                        
+                      </div>
+                    </div>
+              </div>
+              <div class = "col-lg-4 col-s-6">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">Visualizations</h1>
+                      <hr>                        
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <a href="temperatures.html">
+                              <img src="./Resources/fig1.png"  alt="Temperatures" width="130" height="90">
+                            </a>                              
+                            <br><br><br>
+                          </div>
+                          <div class="col">
+                            <a href="humidity.html">
+                              <img src="./Resources/fig2.png"  alt="Humidity" width="130" height="90">
+                            </a>                              
+                            <br>
+                          </div>
+                          <div class="w-100"></div>
+                          <div class="col">
+                            <a href="cloudiness.html">
+                              <img src="./Resources/fig3.png"  alt="Cloudiness" width="130" height="90">
+                            </a>                              
+                            <br>
+                          </div>
+                          <div class="col">
+                            <a href="windspeed.html">
+                              <img src="./Resources/fig4.png"  alt="Wind speed" width="130" height="90">
+                            </a>                              
+                            <br> 
+                          </div>
+                        </div>
+                      </div>               
+                                                                           
+                       </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+          </div>
+      </div>
+    </body>
+</html>

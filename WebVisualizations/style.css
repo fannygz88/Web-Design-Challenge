@@ -1,0 +1,138 @@
+/* ------ HTML -> BODY -----*/
+html body{
+    background-color:#393e41;
+    opacity: 5;
+}
+/* ------ NAVBAR -----*/
+.navbar-custom {
+    background-color: #e7bb41;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: #e4d2c9;
+}
+.navbar-custom .dropdown-item {
+    color: #ffffff;
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #333333;
+    background-color: rgba(255,255,255,.5);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(“data:image/svg+xml;..”);
+ }
+/* ------ IMAGES -----*/
+.gallery{
+    margin:10px 15px;
+    
+    
+}
+.gallery img{
+    padding: 40px;
+    transition: 1s;
+    width 150px;
+    
+}
+.gallery img:hover{
+    filter:gray(100%);
+    transform:scale(1.1)
+}
+.col img{
+   
+    transition: 1s;
+    width 150px;
+    mix-blend-mode: darken;
+
+}
+.col img:hover{
+    filter:gray(100%);
+    transform:scale(1.1); 
+   
+   
+}
+.container img{
+    mix-blend-mode: darken;
+    
+    
+}
+/* ------ JUMBOTRON -----*/
+.jumbotron{
+    margin-top: 80px;
+    
+}
+.jumbotron.jumbotron-fluid{
+    background-color: #e8f1f2;
+}
+
+p{
+    text-align: justify;
+}
+.display-4{
+    color: #e7bb41;
+    font-weight: bold;
+    
+}
+
+.footer {
+    position: centre;
+    width: 100%;    
+    color: rgb(54, 51, 51);
+    text-align: center;
+  }
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
+blockquote {
+    display: block;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #666;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+    text-align: justify;
+}
+blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 3rem;
+    height: 2rem;
+    font: 6em/1.08em 'PT Sans', sans-serif;
+    color: #666;
+    text-align: center;
+}
+/*----- TABLES -----*/
+tr:nth-child(even) {background-color: #f3d0d0;}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+td{
+    text-align:center;
+}
+th{
+    text-align:center;
+}
+tr:hover {background-color: #f5f5f5;}
